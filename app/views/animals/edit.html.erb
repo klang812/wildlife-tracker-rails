@@ -1,0 +1,11 @@
+<h1>Edit Animal</h1>
+
+<%= form_for @animal do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :kind %>
+  <%= f.text_field :kind %>
+  <%= f.submit  %>
+<% end %>
+
+<p><%= link_to "Return to animals", animals_path %></p>

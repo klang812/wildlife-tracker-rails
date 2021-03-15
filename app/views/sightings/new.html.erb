@@ -1,0 +1,15 @@
+<h1>Add a new sighting:</h1>
+
+<%= form_for [@animal, @sighting] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :date%>
+  <%= f.text_field :date %>
+  <%= f.label :latitude %>
+  <%= f.text_field :latitude %>
+  <%= f.label :longitude %>
+  <%= f.text_field :longitude %>
+  <p><%= f.submit %></p>
+<% end %>
+
+<p><%= link_to "Return to animals", animals_path %></p>
